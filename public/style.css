@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("https://minimalismlab.com/wp-content/uploads/2017/12/matt-le-112706.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+.main {
+    width: 40rem;
+    text-align: center;
+    border-radius: 10px;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: relative;
+}
+
+
+.main .form-control input {
+    width:90%;
+    padding:12px;
+    outline:none;
+    border-color:transparent;
+    border-radius: 4px;
+    margin: 1rem 0;
+}
+
+.main button{
+    background-color: #7EAA92;
+    border-color:transparent;
+    padding:10px 12px;
+    width:94%;
+    color:#fff;
+    font-size: 1.1rem;
+}
+.main .form-control input:focus{
+    background-color: rgb(250, 255, 248);
+}

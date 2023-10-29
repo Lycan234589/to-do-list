@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= date %>
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <h1>
+                <%= title %>
+            </h1>
+        </div>
+        <main>
+            <ul>
+                <% list_of_items.forEach((item)=>{ %>
+                    <li>
+                        <%= item %>
+                    </li>
+                    <% }) %>
+            </ul>
+        </main>
+        <div class="footer">
+            <form action="/" method="post">
+                <div class="form-control">
+                    <input type="text" name="newItem" placeholder="Item Name...">
+                </div>
+                <button type="submit">ADD +</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
